@@ -27,6 +27,9 @@ We recommend using [Anaconda](https://anaconda.org/) and creating a *fenicsproje
 
 `conda create -n fenicsproject -c conda-forge fenics mshr matplotlib jupyterlab`
 
+**Note** that on MacOS Big Sur the above command results in an install which doesn't work with the `poisson_basic.py` example. A specific version of mshr needs to be installed. The command to create the virtual environment becomes:
+`conda create -n fenicsproject -c conda-forge fenics mshr=2019.1.0=py38h2af9582_2 mshr matplotlib jupyterlab`
+
 This should install all packages needed to run this tutorial.
 
 ## Running examples
